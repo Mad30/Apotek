@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".Activity.EditProfile">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <include layout="@layout/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnOrderPreserved="false"
+        android:columnCount="1"
+        android:rowCount="1"
+        android:alignmentMode="alignMargins"
+        android:layout_marginLeft="35dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            android:layout_marginRight="50dp"
+            >
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_below="@id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#807B7B"
+                    android:text="Nama"
+                    />
+                <EditText
+                    android:id="@+id/etnama"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:inputType="textPersonName"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:text="Nama user"
+                    android:layout_below="@id/nama"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:layout_below="@id/etnama"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#807B7B"
+                    android:text="Alamat"
+                    />
+                <EditText
+                    android:id="@+id/etalamat"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Lohbener"
+                    android:layout_below="@id/alamat"
+                    android:textColor="#000"
+                    android:inputType="textEmailAddress"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    />
+                <TextView
+                    android:id="@+id/telp"
+                    android:layout_below="@id/etalamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#807B7B"
+                    android:text="No. Telp"
+                    />
+                <EditText
+                    android:id="@+id/ettelp"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:inputType="textPersonName"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:text="081xxxxxxxxx"
+                    android:layout_below="@id/telp"
+                    android:textColor="#000"
+                    />
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:layout_below="@id/ettelp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#807B7B"
+                    android:text="Username"
+                    />
+                <EditText
+                    android:id="@+id/etuser"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Username"
+                    android:layout_below="@id/username"
+                    android:textColor="#000"
+                    android:inputType="textPersonName"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etuser"
+                    android:text="Edit Profile"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+</LinearLayout>

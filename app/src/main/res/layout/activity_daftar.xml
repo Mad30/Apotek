@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="50dp"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DaftarActivity">
+    <include layout="@layout/header"/>
+
+    <EditText
+        android:id="@+id/etnama"
+        android:hint="Nama lengkap"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:elevation="12dp"
+        android:padding="8dp"
+        android:background="@drawable/shape_et"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etalamat"
+        android:hint="Alamat"
+        android:inputType="text"
+        android:maxLines="1"
+        android:elevation="12dp"
+        android:padding="8dp"
+        android:background="@drawable/shape_et"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_place"
+        android:drawablePadding="15dp"/>
+    <EditText
+        android:id="@+id/ettelp"
+        android:hint="No. HP"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:maxLength="12"
+        android:elevation="12dp"
+        android:padding="8dp"
+        android:background="@drawable/shape_et"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="10dp"/>
+    <EditText
+        android:id="@+id/etuname"
+        android:hint="Username"
+        android:maxLines="1"
+        android:elevation="12dp"
+        android:padding="8dp"
+        android:background="@drawable/shape_et"
+        android:digits="@string/digits"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="15dp"/>
+    <EditText
+        android:id="@+id/etpass"
+        android:hint="Password"
+        android:maxLines="1"
+        android:elevation="12dp"
+        android:padding="8dp"
+        android:background="@drawable/shape_et"
+        android:inputType="textPassword"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_key"
+        android:drawablePadding="10dp"/>
+
+    <Button
+        android:id="@+id/btndaftar"
+        android:text="Sign in"
+        android:background="@drawable/shape_btn"
+        android:backgroundTint="#0B40CE"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_marginBottom="5dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnpost"
+        android:textAllCaps="false"
+        android:backgroundTint="#575353"
+        android:textColor="#fff"
+        android:background="@drawable/shape_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+</LinearLayout>

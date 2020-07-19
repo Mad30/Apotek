@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pharmacy Shop</string>
+    <string name="digit">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="digits">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-_?!</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="50dp"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <include layout="@layout/header"/>
+
+    <EditText
+        android:elevation="12dp"
+        android:id="@+id/etname"
+        android:hint="Username"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:background="@drawable/shape_et"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etpass"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:elevation="12dp"
+        android:padding="8dp"
+        android:background="@drawable/shape_et"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_key"
+        android:drawablePadding="10dp"/>
+    <Button
+        android:id="@+id/btnlogin"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:backgroundTint="#0B40CE"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="#ffff"
+        android:background="@drawable/shape_btn"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btncreate"
+        android:textAllCaps="false"
+        android:backgroundTint="#575353"
+        android:textColor="#fff"
+        android:paddingHorizontal="8dp"
+        android:background="@drawable/shape_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buat akun baru"/>
+
+</LinearLayout>

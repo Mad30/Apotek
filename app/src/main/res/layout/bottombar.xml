@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.bottomappbar.BottomAppBar
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bgcheck"
+    style="@style/Widget.MaterialComponents.BottomAppBar"><TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Checkout"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="#097727"
+            android:textSize="25sp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="30">
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub.Total :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="harga"
+                android:textStyle="bold"
+                android:textColor="#FF7805"/>
+        </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Pilih Semua"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</com.google.android.material.bottomappbar.BottomAppBar>\
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
